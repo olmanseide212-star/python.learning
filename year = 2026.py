@@ -53,3 +53,12 @@ plane = {"name":"见20","speed":2000}
 plane["speed"] = 2500
 plane["type"] = "隐身战斗机"
 print(plane)
+def my_welcome():
+    print("a")
+    print(6)
+my_welcome()
+my_welcome()
+def attack(hero_name,damage):
+    print(f"[{hero_name}]发动了攻击，造成了{damage}点伤害")
+attack("孙悟空",999)
+attack("凯",888)
