@@ -16,12 +16,40 @@ for i in range(1, 11):
     if i == 7:
         continue
     print(i)
-secret = 1234
-while True:
-    guess = int(input("请输入密码:"))
-    if guess == secret:
-        print("密码正确")
-        break
-    else:
-        print("密码错误")
+# secret = 1234
+# while True:
+#     guess = int(input("请输入密码:"))
+#     if guess == secret:
+#         print("密码正确")
+#         break
+#     else:
+#         print("密码错误")
 cart = ["书包"]
+game = ["元神","王者荣耀","黑神话悟空"] 
+for g in game:
+    print("我玩过这个游戏：" + g)
+game.append("a")    
+game.remove("元神") 
+print("现在玩的游戏：",game)    
+print("游戏总数一共有：",len(game))
+location = (100,200)
+print("x坐标是:",location[0])
+hero = {"name":"sunwukong","role":"cike","hp":3000} 
+print(hero["name"]) 
+print(hero["role"])
+hero["hp"] = 1000
+hero["attack"] = 500
+print(hero)
+numbers = [1,2,3,2,2,3,4,5,]
+clean_numbers = set(numbers)
+print(clean_numbers)
+game = "黑神话悟空"
+hours = 50
+print(f"我已经玩了{hours}的{game}了")
+score = (88,99,87,90)
+len(score)
+print(f"本次考试一共统计了{len(score)}次成绩")
+plane = {"name":"见20","speed":2000}
+plane["speed"] = 2500
+plane["type"] = "隐身战斗机"
+print(plane)
