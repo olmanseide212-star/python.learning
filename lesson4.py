@@ -1,9 +1,9 @@
-def multiply(x,y):
-    result = x * y
-    return result
-total = multiply(4,6)
-print(f"算出来的结果是：{total}")
-# import random
+# def multiply(x,y):
+#     result = x * y
+#     return result
+# total = multiply(4,6)
+# print(f"算出来的结果是：{total}")
+# # import random
 # import time
 # print("正在启动幸运大转盘")
 # time.sleep(2)
