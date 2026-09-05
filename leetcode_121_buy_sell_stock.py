@@ -42,3 +42,4 @@ if __name__ == "__main__":
     for test in test_cases:
         result = max_profit(test)
         print(f"输入: {test} \t-> 最大利润: {result}")
+print(111)
