@@ -55,16 +55,30 @@
 # for w in clean_winners:
 #     print(w)
 
-def check_pass(score):
-    if score >= 60:
-        return "及格"
+# def check_pass(score):
+#     if score >= 60:
+#         return "及格"
+#     else:
+#         return "不及格"
+# try:
+#     score = int(input("请输入宁的分数"))
+#     print(f"你的成绩判定为:{check_pass(score)}")
+# except:
+#     print("请输入纯数字")
+
+
+def get_player_rank(level):
+    if level >= 50:
+        return {"rank":"王者","gift":"屠龙宝刀"}
+    elif level >= 20:
+        return {"rank":"钻石","gift":"倚天剑"}
     else:
-        return "不及格"
+        return {"ranl":"青铜","gift":"新手木剑"}
 try:
-    score = int(input("请输入宁的分数"))
-    print(f"你的成绩判定为:{check_pass(score)}")
+    level = int(input("请输入你的玩家等级:"))
+    print(f"{get_player_rank(level)}")
 except:
-    print("请输入纯数字")
+    print("请输入合法的数字等级")
 
 
 
